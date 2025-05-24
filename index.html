@@ -483,7 +483,6 @@
             justify-content: center;
             width: 60px;
             height: 60px;
-            background: #ef8354;
             color: white;
             border-radius: 50%;
             text-decoration: none;
@@ -496,6 +495,19 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
         }
+
+            .social-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        filter: brightness(1);
+    }
+
+    .social-links a:hover .social-icon {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -571,6 +583,18 @@
         .fade-in {
             animation: fadeInUp 0.6s ease forwards;
         }
+        .ig-link {
+        text-decoration: none;       
+        color: #ef8354;              
+        font-weight: 600;
+        transition: color 0.3s ease;
+}
+
+.ig-link:hover {
+    color: #0056b3;           
+    cursor: pointer;
+}
+
     </style>
 </head>
 <body class="dark-mode">
@@ -662,30 +686,25 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>🎭 Creative Arts</h3>
+                    <h3>🎭 Personal</h3>
                     <ul class="skill-list">
-                        <li>Kuchipudi Dance (Trained)</li>
-                        <li>Mixed Media Art</li>
-                        <li>Creative Expression</li>
-                        <li>Visual Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🥋 Martial Arts</h3>
-                    <ul class="skill-list">
-                        <li>Taekwondo (Black Belt)</li>
-                        <li>Self Defense</li>
-                        <li>Discipline & Focus</li>
-                        <li>Physical Fitness</li>
+                        <li>Mixed Media Artist (Traditional & Digital)<a href="https://www.instagram.com/nothisisntart/" target="_blank" class="ig-link" title="Check out my art!">
+                            @nothisisntart
+                        </a>
+                        </li>
+                        <li>Trained Kuchipudi Dancer
+                        </li>
+                        <li>Volunteer at CCC (Campus Canine Club), IIITH</li>
+                        <li></li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>💻 Technical Skills</h3>
                     <ul class="skill-list">
-                        <li>Computer Science Fundamentals</li>
-                        <li>Web Development</li>
-                        <li>Programming Languages</li>
-                        <li>Problem Solving</li>
+                        <li>C</li>
+                        <li>HTML, CSS, Javascript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
                     </ul>
                 </div>
             </div>
@@ -701,35 +720,32 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">🌐</div>
+                    <div class="project-image">🐚</div>
                     <div class="project-content">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript featuring dark mode, smooth scrolling, and interactive elements.</p>
+                        <h3>C Shell</h3>
+                        <p>A custom shell written in C, designed to provide a simplified yet powerful command-line interface.</p>
                         <div class="project-links">
-                            <a href="#" onclick="alert('Add your GitHub link here!')">View Code</a>
-                            <a href="#" onclick="alert('Add your live demo link here!')">Live Demo</a>
+                            <a href="https://github.com/Joshitadhanireddy/C-Shell">View Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">🚀</div>
+                    <div class="project-image">🛒</div>
                     <div class="project-content">
-                        <h3>Project Two</h3>
-                        <p>Add description of your second project here. Replace this with your actual project details and technologies used.</p>
+                        <h3>BUY/SELL website for IIITH</h3>
+                        <p>A full-stack web application to facilitate buying and selling among students within the IIIT-H community.</p>
                         <div class="project-links">
-                            <a href="#" onclick="alert('Add your GitHub link here!')">View Code</a>
-                            <a href="#" onclick="alert('Add your live demo link here!')">Live Demo</a>
+                            <a href="https://github.com/Joshitadhanireddy/BUY-SELL-IIITH">View Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">⚡</div>
+                    <div class="project-image">💊</div>
                     <div class="project-content">
-                        <h3>Project Three</h3>
-                        <p>Add description of your third project here. Include the technologies used and what problems it solves.</p>
+                        <h3>Clinical Note Analyser</h3>
+                        <p>A proof-of-concept pipeline to process Indian clinical notes via technology to make healthcare communication accessible and inclusive.</p>
                         <div class="project-links">
-                            <a href="#" onclick="alert('Add your GitHub link here!')">View Code</a>
-                            <a href="#" onclick="alert('Add your live demo link here!')">Live Demo</a>
+                            <a href="#" onclick="alert('Work in Progress')">View Code</a>
                         </div>
                     </div>
                 </div>
@@ -748,7 +764,7 @@
                 <div class="achievement-card">
                     <div class="achievement-icon">🏆</div>
                     <h3>CBSE Grade 10 Topper</h3>
-                    <p>Achieved top performance in CBSE Grade 10 Board Examinations</p>
+                    <p>Achieved top performance in CBSE Grade 10 Board Examinations : 98%</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">📚</div>
@@ -756,14 +772,9 @@
                     <p>Exceptional performance in SAT examination</p>
                 </div>
                 <div class="achievement-card">
-                    <div class="achievement-icon">🥋</div>
-                    <h3>Taekwondo Black Belt</h3>
-                    <p>Achieved black belt certification in Taekwondo martial arts</p>
-                </div>
-                <div class="achievement-card">
                     <div class="achievement-icon">💃</div>
                     <h3>Kuchipudi Dancer</h3>
-                    <p>Trained classical Indian dance performer</p>
+                    <p>Trained for over 7 years at <br> NatyaTarangini, Hyderabad</p>
                 </div>
             </div>
         </div>
@@ -775,16 +786,21 @@
             <div class="contact-content">
                 <div class="section-header">
                     <h2>Get In Touch</h2>
-                    <p>Let's connect and collaborate on exciting projects!</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/joshitareddyy/" target="_blank" title="Instagram">📷</a>
-                    <a href="https://github.com/Joshitadhanireddy" target="_blank" title="GitHub">💻</a>
-                    <a href="mailto:joshita.dhanireddy@students.iiit.ac.in" title="Email">✉️</a>
-                </div>
-                <p style="margin-top: 2rem; font-size: 1.1rem;">
-                    Email: <a href="mailto:joshita.dhanireddy@students.iiit.ac.in" style="color: #ef8354;">joshita.dhanireddy@students.iiit.ac.in</a>
-                </p>
+                    <p>Let's connect and collaborate on innovative projects!</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Joshitadhanireddy" target="_blank" title="GitHub">
+                            <img src="github.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="mailto:joshita.dhanireddy@gmail.com" title="Email">
+                            <img src="gmail.png" alt="Gmail" class="social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/joshitadhanireddy" target="_blank" title="LinkedIn">
+                            <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/joshitareddyy/" target="_blank" title="Instagram">
+                            <img src="instagram.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
             </div>
         </div>
     </section>
